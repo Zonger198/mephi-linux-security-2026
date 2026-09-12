@@ -1,0 +1,14 @@
+passwd
+cat /etc/shadow
+/home/user1/cat-suid /etc/shadow
+touch /home/user1/test-cap
+ls -l /home/user1/test-cap 
+chown root /home/user1/test-cap 
+/home/user1/chown-cap root /home/user1/test-cap 
+ls -l /home/user1/test-cap 
+sudo -l
+date
+sudo /usr/bin/date -s "01:00"
+sudo /user/bin/date
+sudo /usr/bin/date 
+history  -a

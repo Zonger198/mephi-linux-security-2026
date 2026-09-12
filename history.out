@@ -1,0 +1,44 @@
+    1  echo 'user1 ALL=(root) /usr/bin/date' > /etc/sudoers.d/user1-time
+    2  chmod 440 /etc/sudoers.d/user1-time
+    3  visudo -cf /etc/sudoers.d/user1-time
+    4  timedatectl set-ntp true
+    5  cp /etc/sudoers /root/mephi-linux-security-2026/sudoers
+    6  cp /etc/sudoers.d/user1-time /root/mephi-linux-security-2026/user1-time
+    7  sudo -l -U user1  > /root/mephi-linux-security-2026/sudo-user.out
+    8  ls -l /root/mephi-linux-security-2026/
+    9  echo 372155
+   10  clear
+   11  echo 372155
+   12  cp /etc/passwd /root/mephi-linux-security-2026/passwd
+   13  cp /etc/shadow /root/mephi-linux-security-2026/shadow
+   14  cp /etc/group /root/mephi-linux-security-2026/group
+   15  ls -l /root/mephi-linux-security-2026/
+   16  history -a
+   17  ps -ef | grep -E 'visudo|vim|vi'
+   18  kill 1331
+   19  ps -ef | grep -E 'visudo|vim|vi'
+   20  kill -9 1331
+   21  ps -ef | grep -E 'visudo|vim|vi'
+   22  kill 1330
+   23  ps -ef | grep -E 'visudo|vim|vi'
+   24  kill -9 1330
+   25  ps -ef | grep -E 'visudo|vim|vi'
+   26  visudo -cf /etc/sudoers
+   27  history -r
+   28  echo 'user1 ALL=(root) /usr/bin/date' > /etc/sudoers.d/user1-time
+   29  chmod 440 /etc/sudoers.d/user1-time
+   30  visudo -cf /etc/sudoers.d/user1-time
+   31  timedatectl set-ntp true
+   32  cp /etc/sudoers /root/mephi-linux-security-2026/sudoers
+   33  cp /etc/sudoers.d/user1-time /root/mephi-linux-security-2026/user1-time
+   34  sudo -l -U user1  > /root/mephi-linux-security-2026/sudo-user.out
+   35  ls -l /root/mephi-linux-security-2026/
+   36  echo 372155
+   37  clear
+   38  echo 372155
+   39  cp /etc/passwd /root/mephi-linux-security-2026/passwd
+   40  cp /etc/shadow /root/mephi-linux-security-2026/shadow
+   41  cp /etc/group /root/mephi-linux-security-2026/group
+   42  ls -l /root/mephi-linux-security-2026/
+   43  history -a
+   44  history > /root/mephi-linux-security-2026/history.out
